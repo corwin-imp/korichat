@@ -1,0 +1,49 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 470px) {
+  .title {
+    margin-right: -15px; }
+  .main-head .text-wrap {
+    margin: 0 -20px 10px -20px;
+    padding-left: 21%; }
+    .main-head .text-wrap p {
+      margin-left: 15%;
+      padding-right: 1.3%; }
+  .chat {
+    position: relative; }
+    .chat .last-answers li {
+      display: block;
+      margin-bottom: 5px; }
+  .icons {
+    position: absolute;
+    right: 0;
+    top: 10px; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .main-head .text-wrap p {
+    width: 320px; } }
+
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

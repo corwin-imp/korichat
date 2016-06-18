@@ -1,0 +1,213 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+
+
+
+
+//Load Libs SASS
+@import "Rostova/libs/animate.css/animate"
+//@import "app/libs/superfish/dist/css/superfish" // импортировать в sass css файлы нужно без разширения
+@import "Rostova/libs/font-awesome/scss/font-awesome"
+
+
+
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: "Times New Roman", sans-serif
+	overflow-x: hidden
+	padding: 0	20px
+	color: #333
+
+h2, h3, h4, p
+	margin: 0
+h2, h3, h4
+	font-family: Arial, sans-serif
+	font-weight: bold
+span
+	color: #808080
+	font-size: 12px
+h3
+	font-size: 14px
+h2
+	color: #000
+	font-size: 16px
+
+img
+	width: 26%
+.button
+	display: inline-block
+	font-size: 16px
+
+	padding: 10px 55px
+	border: 1px solid transparent
+	border-radius: 100px
+	transition: all .25s ease
+	background: #fdd639
+
+
+	&:hover
+		background-color: darken(#fdd639, 10%)
+	&:active
+		background-color: darken($main-color, 20%)
+
+	&:hover, &:focus
+		text-decoration: none
+		color: $main-color
+
+
+.main-head
+	margin-top: 15px
+	img
+		position: absolute
+		left: 12px
+	.title
+		margin: 5px 0 5px 28% 
+		padding-top: 5px
+
+		span
+	.text-wrap		
+		padding: 1.3% 1.3% 1.3% 3.8%
+		margin-bottom: 10px
+		margin-left: 15%
+		border: 1px solid #cecabf
+		background-color: #fffbc8
+		
+		p
+			margin-left: 11%
+			font-size: 15px
+		
+.services
+	min-height: 100px
+	margin-left: 28%
+	margin-bottom: 25px
+	padding: 0
+	p
+		text-align: right
+		border-bottom: 1px solid #ccc
+		margin-bottom: 15px
+		padding-bottom: 3px
+		padding-right: 12%
+	ul, .services-progress
+		float: left
+		list-style-type: none
+		text-align: center
+		li
+			margin-bottom: 8px
+	.progress
+		margin-bottom: 2px
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+		border-bottom-right-radius: 10%
+		border-bottom-right-radius: 10%
+		height: 25px
+		background: none
+		box-shadow: none
+		position: relative
+		.progress-bar
+			border-top-left-radius: 0
+			border-bottom-left-radius: 0
+			border-bottom-right-radius: 4px
+			border-top-right-radius: 4px
+		span
+			line-height: 25px
+			color: #333
+			position: absolute
+			left: 7px
+		&:last-child
+			margin: 0
+
+	.services-progress
+		width: 70%
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			height: 100%
+			width: 1px
+			background-color: rgba(#000, .4)
+			z-index: 5
+
+
+	ul
+		width: 30%
+		padding: 0 7% 0 0
+	.results
+		border-top: 1px solid #ccc
+		clear: both
+		padding-top: 10px
+		margin-top: 15px
+		h2
+			display: inline-block
+			float: left
+			&:last-child
+				float: right
+				padding-right: 16%
+
+.chat
+	.last-answers
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			margin-right: 5px
+			list-style-type: none
+		.icons
+			float: right
+			a
+				color: #333
+				margin-left: 17px
+			i
+				color: #337ab7
+		.glyphicon-comment
+			transform: scale(-1, 1)
+	.info
+		margin: 15px 0 10px
+		b
+			margin-right: 2px
+	.message
+		padding: 15px 20px
+		background-color: #f2fbff
+		position: relative
+		border: 1px solid #cfcfcf
+		&::before
+			content: ''
+			width: 0
+			height: 0
+			top: -10px
+			left: 3.5%
+			border-bottom: 10px solid #cfcfcf
+			border-right: 10px solid transparent
+			position: absolute
+			display: block
+		&::after
+			content: ''
+			width: 0
+			height: 0
+			top: -8.5px
+			left: 3.6%
+			border-bottom: 10px solid #f2fbff
+			border-right: 10px solid transparent
+			position: absolute
+			display: block
+	.form
+		background-color: #f2f2f2
+		margin: 20px -20px 0
+		text-align: center
+		padding: 30px 20px 35px
+	textarea
+		display: block
+		width: 100%
+		margin:
+			
+			bottom: 25px
+
+
+
+
+	//ALWAYS END
+@import "media"
