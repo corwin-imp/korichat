@@ -1,1 +1,1 @@
-node server/appChat.js
+node appChat.js
