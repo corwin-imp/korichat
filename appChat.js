@@ -12,6 +12,7 @@ var server = http.createServer(app);
 var io = require('socket.io').listen(server, options);
 server.listen(port);
 
+app.use('/static', express.static(__dirname + '/public'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
@@ -20,8 +21,6 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-
-app.use('/static', express.static(__dirname + '/static'));
 
 io.sockets.on('connection', function (client) {
     client.on('message', function (message) {
@@ -34,3 +33,4 @@ io.sockets.on('connection', function (client) {
         }
     });
 });
+
