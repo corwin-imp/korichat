@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body class="ishome">
+
+  <div class="hidden">
+    <form class="popup-form callback zoom-anim-dialog" id="callback">
+      <div class="success">Thank!</div>
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="company-shop">
+      <input type="hidden" name="admin_email" value="korvin424@gmail.com">
+      <input type="hidden" name="form_subject" value="request service">
+      <!-- END Hidden Required Fields -->
+
+      <h3>order service name</h3>
+      <label >
+        <span>Your name:</span>
+        <input type="text" name="name" placeholder=" please enter your name...">
+      </label>
+      <label >
+        <span>Your phone:</span>
+        <input type="text" name="phone" placeholder=" please enter your phone..." required>
+      </label>
+      <div class="text-center">
+        <button class="button">Order</button>
+      </div>
+      <!--where-->
+      <input type="hidden" class="formname" name="service" value="service name">
+    </form>
+  </div>
+
+  <header class="main-head">
+    <img src="img/bg-im.png" alt="img">
+    <div class="title">
+      <h2>Вероника Ростова</h2>
+      <span>Менеджер по продажам</span>
+    </div>
+    <div class="text-wrap"><p>
+      Подберу для вас самые лучшие предложения.
+
+      Мои услуги абсолютно бесплатно
+    </p>
+  </div>
+
+</header>
+
+<div class="services container">
+  <p>Услуги</p>
+  <div class="services-progress">
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 96%"><span>Ручное бронирования</span>
+
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 23%"><span>Пакетные туры</span>
+
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 16%"><span>Отели</span>
+
+      </div>
+    </div>
+
+  </div>
+
+  <ul class="counts">
+    <li>11</li>
+    <li>3</li>
+    <li>1</li>
+  </ul>
+  <div class="results">
+    <h2>Всего</h2>
+    <h2>15</h2>
+  </div>
+</div>
+
+<section class="chat">
+  <ul class="last-answers">
+    <li><h2>Последние отзывы</h2></li>
+    <li><a href="#">Все отзывы</a></li>
+    <li class="icons">
+      <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> 131</a> 
+      <a href="#"><i class="glyphicon glyphicon-comment"></i> 14</a>
+    </li>
+  </ul> 
+  <div class="message-wrap">
+    
+    <div class="info">
+      <b>Самуил</b>
+      <span>13 октября 2011</span>
+    </div>
+
+    <div class="message">
+      <p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+    </div>
+
+  </div>
+
+  <div class="message-wrap">
+    
+    <div class="info">
+      <b>Лилия Семёновна</b>
+      <span>14 октября 2011</span>
+    </div>
+
+    <div class="message">
+      <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+    </div>
+
+  </div>
+
+  <div class="message-wrap">
+    
+    <div class="info">
+      <b>Лилия Семёновна</b>
+      <span>14 октября 2011</span>
+    </div>
+
+    <div class="message">
+      <p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+    </div>
+
+  </div>
+  <div class="messages" id="messages">
+    
+  </div>
+  
+  <div class="form">
+    <textarea name="message_text" id="message_text" cols="30" rows="3"> </textarea>
+
+    <button type="submit" id="message_btn" class="button" value="Написать консультанту">Написать консультанту</button>
+
+  </div>
+
+</section>
+
+
+<footer class="main-foot"></footer>
+
+<% include ../partials/footer.ejs %>
+</body>
+</html>
